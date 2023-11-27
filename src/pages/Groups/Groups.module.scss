@@ -1,12 +1,12 @@
 .groups {
   h3 {
-    font-size: 32px;
+    font-size: clamp(16px, 1.66656vw, 64px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
   h4 {
-    font-size: 24px;
+    font-size: clamp(12px, 1.24992vw, 48px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -33,7 +33,7 @@
       margin-bottom: 20px;
       h5 {
         color: #acacac;
-        font-size: 14px;
+        font-size: clamp(7px, 0.72912vw, 28px);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -41,22 +41,22 @@
       }
       h2 {
         color: #333;
-        font-size: 32px;
+        font-size: clamp(16px,1.66656vw,64px);
         font-style: normal;
         font-weight: 600;
-        line-height: 100%; /* 32px */
+        line-height: 100%;
         letter-spacing: -0.32px;
       }
       h4 {
         color: #292d32;
-        font-size: 12px;
+        font-size: clamp(6px,0.62496vw,24px);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         letter-spacing: -0.12px;
         span {
           color: #00ac4f;
-          font-size: 12px;
+          font-size: clamp(6px,0.62496vw,24px);
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -86,7 +86,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
       h3 {
-        font-size: 22px;
+        font-size: clamp(11px, 1.1457600000000001vw, 44px);
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -95,7 +95,7 @@
       }
       h5 {
         color: #acacac;
-        font-size: 14px;
+        font-size: clamp(7px, 0.72912vw, 28px);
         font-style: normal;
         font-weight: 400;
         line-height: normal;

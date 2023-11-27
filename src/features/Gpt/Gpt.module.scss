@@ -3,7 +3,7 @@
   width: 100%;
   .item {
     height: 100%;
-    width: 95%;
+    width: 100%;
     padding: 40px 30px;
     background: #fff;
     border-radius: 8px;
@@ -13,16 +13,27 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     }
     h3 {
-        font-size: 24px;
+        font-size: clamp(12px,1.24992vw,48px);
         font-style: normal;
         font-weight: 500;
         line-height: normal;
       }
       h4 {
-        font-size: 18px;
+        font-size: clamp(9px,0.93744vw,36px);
         font-style: normal;
         font-weight: 400;
         line-height: normal;
       }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gpt {
+    .item {
+      padding: 20px ;
+        h4 {
+          margin-bottom: 20px;
+        }
+    }
   }
 }

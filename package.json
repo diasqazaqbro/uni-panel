@@ -13,6 +13,7 @@
     "@ant-design/icons": "^5.2.6",
     "@reduxjs/toolkit": "^1.9.7",
     "antd": "^5.11.4",
+    "axios": "^1.6.2",
     "chart.js": "^4.4.0",
     "faker": "^6.6.6",
     "normalize-scss": "^8.0.0",

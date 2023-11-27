@@ -17,12 +17,11 @@ const Groups: React.FC = () => {
 
   return (
     <div className={styles.groups}>
-      <h3>Welcome John!👋🏼</h3>
-      <h4>May 28, 2020</h4>
+
       <Switch checked={!loading} onChange={onChange} />
 
       <Row className={styles.block}>
-        <Col span={8} style={{margin: '20px 0'}}>
+        <Col xs={24} sm={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[
@@ -42,7 +41,7 @@ const Groups: React.FC = () => {
             </Skeleton>
           </Card>
         </Col>
-        <Col span={8} style={{margin: '20px 0'}}>
+        <Col xs={24} sm={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[
@@ -62,7 +61,7 @@ const Groups: React.FC = () => {
             </Skeleton>
           </Card>
         </Col>
-        <Col span={8} style={{margin: '20px 0'}}>
+        <Col xs={24} sm={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[
@@ -82,7 +81,7 @@ const Groups: React.FC = () => {
             </Skeleton>
           </Card>
         </Col>
-        <Col span={8} style={{margin: '20px 0'}}>
+        <Col xs={24} sm={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[
@@ -102,7 +101,7 @@ const Groups: React.FC = () => {
             </Skeleton>
           </Card>
         </Col>
-        <Col span={8} style={{margin: '20px 0'}}>
+        <Col xs={24} sm={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[
@@ -122,7 +121,7 @@ const Groups: React.FC = () => {
             </Skeleton>
           </Card>
         </Col>
-        <Col span={8} style={{margin: '20px 0'}}>
+        <Col xs={24} sm={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[

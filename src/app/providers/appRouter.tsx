@@ -1,21 +1,25 @@
-import { createBrowserRouter } from 'react-router-dom'
-import LayoutComponent from '../layout/LayoutComponent'
-import { ROUTERS_CONSTANTS } from '../../shared/config/routes'
-import Students from '../../pages/Students'
-import Groups from '../../pages/Groups'
-import Schedule from '../../pages/Schedule'
-import Home from '../../pages/Home'
-import Profile from '../../pages/Profile'
+import { createBrowserRouter } from "react-router-dom";
+import LayoutComponent from "../layout/LayoutComponent";
+import { ROUTERS_CONSTANTS } from "../../shared/config/routes";
+import Students from "../../pages/Students";
+import Groups from "../../pages/Groups";
+import Schedule from "../../pages/Schedule";
+import Home from "../../pages/Home";
+import Profile from "../../pages/Profile";
+import LayoutForTeacher from "../layout/LayoutRole/LayoutForTeacher";
+import LayoutForStudent from "../layout/LayoutRole/LayoutForStudent";
 
 export const appRouter = () =>
   createBrowserRouter([
     {
       children: [
         {
-          path: '/',
-          element: <LayoutComponent>
-            <Home/>
-          </LayoutComponent>,
+          path: "/",
+          element: (
+            <LayoutComponent>
+              <Home />
+            </LayoutComponent>
+          ),
         },
       ],
     },
@@ -23,9 +27,13 @@ export const appRouter = () =>
       children: [
         {
           path: ROUTERS_CONSTANTS.STUDENTS,
-          element: <LayoutComponent>
-            <Students/>
-          </LayoutComponent>,
+          element: (
+            <LayoutComponent>
+              <LayoutForTeacher>
+                <Students />
+              </LayoutForTeacher>
+            </LayoutComponent>
+          ),
         },
       ],
     },
@@ -33,9 +41,13 @@ export const appRouter = () =>
       children: [
         {
           path: ROUTERS_CONSTANTS.GROUPS,
-          element: <LayoutComponent>
-            <Groups/>
-          </LayoutComponent>,
+          element: (
+            <LayoutComponent>
+              <LayoutForTeacher>
+                <Groups />
+              </LayoutForTeacher>
+            </LayoutComponent>
+          ),
         },
       ],
     },
@@ -43,9 +55,13 @@ export const appRouter = () =>
       children: [
         {
           path: ROUTERS_CONSTANTS.SCHEDULE,
-          element: <LayoutComponent>
-            <Schedule/>
-          </LayoutComponent>,
+          element: (
+            <LayoutComponent>
+              <LayoutForStudent>
+                <Schedule />
+              </LayoutForStudent>
+            </LayoutComponent>
+          ),
         },
       ],
     },
@@ -53,10 +69,14 @@ export const appRouter = () =>
       children: [
         {
           path: ROUTERS_CONSTANTS.PROFILE,
-          element: <LayoutComponent>
-            <Profile/>
-          </LayoutComponent>,
+          element: (
+            <LayoutComponent>
+              <LayoutForStudent>
+                <Profile />
+              </LayoutForStudent>
+            </LayoutComponent>
+          ),
         },
       ],
-    }
-  ])
+    },
+  ]);

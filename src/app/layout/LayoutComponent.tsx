@@ -2,6 +2,7 @@ import React, { ReactNode, useState } from "react";
 import { Layout,  theme } from "antd";
 import Float from "../../widgets/Float";
 import NavBar from "../../features/NavBar";
+import { useSelector } from "react-redux";
 
 const { Content, Footer, Sider } = Layout;
 
@@ -9,13 +10,16 @@ interface LayoutComponentProps {
   children: ReactNode;
 }
 
-
-
 const LayoutComponent: React.FC<LayoutComponentProps> = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  const isAuth = useSelector((state: any) => state.role.isAuth);
+  if (!isAuth) {
+    window.location.replace('https://samigroup.kz');
+  }
 
   return (
     <Layout style={{ minHeight: "100vh" }}>

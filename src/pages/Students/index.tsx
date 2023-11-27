@@ -47,8 +47,6 @@ const Students: React.FC = () => {
 
   return (
     <div className={styles.students}>
-      <h3>Welcome John!👋🏼</h3>
-      <h4>May 28, 2020</h4>
       <Input.Search placeholder="Search" onSearch={() => console.log("yo")} />
 
       <div className={styles.data}>

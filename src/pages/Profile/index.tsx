@@ -18,13 +18,12 @@ const Profile = () => {
         </Row>
       </div>
       <Row>
-        <Col span={6}>
+        <Col xs={24} sm={6}>
           <div className={styles.two}></div>
         </Col>
-        <Col span={18}>
+        <Col xs={24} sm={18}>
           <div className={styles.three}>
-      <Grades/>
-
+            <Grades />
           </div>
         </Col>
       </Row>
