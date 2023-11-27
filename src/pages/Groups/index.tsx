@@ -22,7 +22,7 @@ const Groups: React.FC = () => {
       <Switch checked={!loading} onChange={onChange} />
 
       <Row className={styles.block}>
-        <Col span={8}>
+        <Col span={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[
@@ -42,7 +42,7 @@ const Groups: React.FC = () => {
             </Skeleton>
           </Card>
         </Col>
-        <Col span={8}>
+        <Col span={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[
@@ -62,7 +62,67 @@ const Groups: React.FC = () => {
             </Skeleton>
           </Card>
         </Col>
-        <Col span={8}>
+        <Col span={8} style={{margin: '20px 0'}}>
+          <Card
+            style={{ margin: '0 10px' }}
+            actions={[
+              <SettingOutlined key="setting" />,
+              <EditOutlined key="edit" />,
+              <EllipsisOutlined key="ellipsis" />,
+            ]}
+          >
+            <Skeleton loading={loading} avatar active>
+              <Meta
+                avatar={
+                  <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=2" />
+                }
+                title="Card title"
+                description="This is the description"
+              />
+            </Skeleton>
+          </Card>
+        </Col>
+        <Col span={8} style={{margin: '20px 0'}}>
+          <Card
+            style={{ margin: '0 10px' }}
+            actions={[
+              <SettingOutlined key="setting" />,
+              <EditOutlined key="edit" />,
+              <EllipsisOutlined key="ellipsis" />,
+            ]}
+          >
+            <Skeleton loading={loading} avatar active>
+              <Meta
+                avatar={
+                  <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=2" />
+                }
+                title="Card title"
+                description="This is the description"
+              />
+            </Skeleton>
+          </Card>
+        </Col>
+        <Col span={8} style={{margin: '20px 0'}}>
+          <Card
+            style={{ margin: '0 10px' }}
+            actions={[
+              <SettingOutlined key="setting" />,
+              <EditOutlined key="edit" />,
+              <EllipsisOutlined key="ellipsis" />,
+            ]}
+          >
+            <Skeleton loading={loading} avatar active>
+              <Meta
+                avatar={
+                  <Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=2" />
+                }
+                title="Card title"
+                description="This is the description"
+              />
+            </Skeleton>
+          </Card>
+        </Col>
+        <Col span={8} style={{margin: '20px 0'}}>
           <Card
             style={{ margin: '0 10px' }}
             actions={[

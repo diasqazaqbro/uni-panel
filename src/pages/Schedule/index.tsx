@@ -1,7 +1,11 @@
+import Dashboard from "../../widgets/Dashbord";
+
 const Schedule = () => {
   return (
-    <div>Schedule</div>
-  )
-}
+    <div>
+      <Dashboard/>
+    </div>
+  );
+};
 
-export default Schedule
+export default Schedule;

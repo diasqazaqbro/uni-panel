@@ -1,6 +1,8 @@
 export const ROUTERS_CONSTANTS = {
-    NOTIFICATION: '/notification',
+    // teacher
     STUDENTS: '/students',
     GROUPS: '/groups',
+    // student
     SCHEDULE: '/schedule',
+    PROFILE: '/profile',
 }
