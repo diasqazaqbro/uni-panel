@@ -7,7 +7,7 @@ export interface IRole {
 }
 
 const initialState: IRole = {
-  userRole: "teacher",
+  userRole: "student",
 };
 
 export const roleSlice = createSlice({
