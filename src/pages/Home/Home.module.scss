@@ -1,0 +1,108 @@
+.home {
+  .header {
+    h3 {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    h4 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .dashboard {
+    margin: 24px 0;
+    height: 151px;
+    width: 100%;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    }
+    .item {
+      padding-left: 30px;
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+      h5 {
+        color: #acacac;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.14px;
+      }
+      h2 {
+        color: #333;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 32px */
+        letter-spacing: -0.32px;
+      }
+      h4 {
+        color: #292d32;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.12px;
+        span {
+          color: #00ac4f;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.12px;
+        }
+      }
+    }
+  }
+  .charts {
+    .item {
+      margin: 24px 0;
+      width: 100%;
+      padding: 40px 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+  .circule {
+    .item {
+      margin: 24px 0;
+      width: 100%;
+      padding: 40px 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      h3 {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.22px;
+        margin-top: 20px;
+      }
+      h5 {
+        color: #acacac;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.14px;
+      }
+    }
+  }
+}
