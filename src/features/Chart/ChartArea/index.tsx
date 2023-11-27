@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -7,8 +8,8 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
+} from "chart.js";
+import { Line } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -23,53 +24,47 @@ ChartJS.register(
 export const options = {
   responsive: true,
   interaction: {
-    mode: 'index' as const,
+    mode: "index" as const,
     intersect: false,
   },
   stacked: false,
   plugins: {
     title: {
       display: true,
-      text: 'Тестовые приколы',
+      text: "Средний GPA по месяцам",
     },
   },
   scales: {
     y: {
-      type: 'linear' as const,
+      type: "linear" as const,
       display: true,
-      position: 'left' as const,
-    },
-    y1: {
-      type: 'linear' as const,
-      display: true,
-      position: 'right' as const,
-      grid: {
-        drawOnChartArea: false,
-      },
+      position: "left" as const,
     },
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
-const dataset1Data = labels.map(() => Math.floor(Math.random() * (1000 - (-1000) + 1)) + -1000);
-const dataset2Data = labels.map(() => Math.floor(Math.random() * (1000 - (-1000) + 1)) + -1000);
+// Generating random GPA values between 2 and 4 for each month
+const individualGpaData = labels.map(() => Math.random() * 2 + 2);
+const groupGpaData = labels.map(() => Math.random() * 2 + 2);
+
 export const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
-      data: dataset1Data,
-      borderColor: 'rgb(255, 99, 132)',
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      yAxisID: 'y',
+      label: "Индивидуальный GPA",
+      data: individualGpaData,
+      borderColor: "#34befa",
+      backgroundColor: "rgba(52, 190, 250, 0.5)",
+      yAxisID: "y",
     },
     {
-      label: 'Dataset 2',
-      data: dataset2Data,
-      borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      yAxisID: 'y1',
+      label: "Средний GPA в группе",
+      data: groupGpaData,
+      borderColor: "#fa8334",
+      backgroundColor: "rgba(250, 131, 52, 0.5)",
+      yAxisID: "y",
     },
   ],
 };
