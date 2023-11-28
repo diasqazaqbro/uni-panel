@@ -7,7 +7,6 @@ interface IProps {
 const LayoutForStudent: React.FC<IProps> = ({ children }) => {
   const role = useSelector((state: any) => state.role.userRole);
   if (role === "teacher") {
-    alert('lol')
     window.location.replace('/');
   }
   return <div>{children}</div>;

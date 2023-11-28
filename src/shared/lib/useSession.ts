@@ -26,24 +26,24 @@ const useSession = (): ISessionHook => {
 
   const getToken = (): string | null => {
     if (typeof window !== "undefined" && typeof localStorage !== "undefined") {
-      return localStorage.getItem("access_token") || "";
+      return localStorage.getItem("token") || "";
     }
     return null;
   };
 
   const setSession = (newToken: string): void => {
-    localStorage.setItem("access_token", newToken);
+    localStorage.setItem("token", newToken);
   };
 
   const clearSession = (): void => {
-    localStorage.removeItem("access_token");
+    localStorage.removeItem("token");
     setIsAuthorized(false);
     setUser(null);
   };
 
   useEffect(() => {
     const userToken = getToken();
-    fetch("ваш_серверный_эндпоинт", {
+    fetch('https://pixel2protocolv1-production-c8ac.up.railway.app/profile', {
       method: "GET",
       headers: {
         Authorization: `Bearer ${userToken}`,
@@ -58,7 +58,6 @@ const useSession = (): ISessionHook => {
         console.error("Ошибка запроса:", error);
       });
   }, []);
-
   return {
     user,
     getToken,

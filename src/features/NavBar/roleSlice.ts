@@ -10,6 +10,7 @@ export interface IRole {
 const initialState: IRole = {
   userRole: "student",
   isAuth: true,
+  user: ''
 };
 
 export const roleSlice = createSlice({
@@ -19,9 +20,12 @@ export const roleSlice = createSlice({
     roleFC: (state, action: PayloadAction<any>) => {
       state.userRole = action.payload;
     },
+    userFC: (state, action: PayloadAction<any>) => {
+      state.userRole = action.payload;
+    },
   },
 });
 
-export const { roleFC } = roleSlice.actions;
+export const { roleFC,userFC } = roleSlice.actions;
 
 export default roleSlice.reducer;

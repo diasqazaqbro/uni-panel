@@ -15,6 +15,7 @@ const Groups: React.FC = () => {
     setLoading(!checked);
   };
 
+
   return (
     <div className={styles.groups}>
 
@@ -78,6 +79,7 @@ const Groups: React.FC = () => {
                 title="Card title"
                 description="This is the description"
               />
+              
             </Skeleton>
           </Card>
         </Col>
